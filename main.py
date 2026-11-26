@@ -16,7 +16,7 @@ def main():
     image = Image.open(io.BytesIO(response.content)) #Open image
     image.save("code.png") # save it to recognize
     text = pytesseract.image_to_string(image, config='--psm 10') # recognize the image
-    print("CODE:", text.strip()) # print the code to be sure in our actions
+    print("CODE:", text.strip()) # print the code to be sure of our actions
 
     body = {
         "answer": text.strip()

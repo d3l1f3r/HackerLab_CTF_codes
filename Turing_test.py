@@ -6,7 +6,7 @@ import requests
 
 
 def main():
-    url = "http://62.173.140.174:16036/image.php"
+    url = "http://[IP]:16036/image.php"
     session = requests.Session() #Get session
     response = session.get(url)
     response.raise_for_status()

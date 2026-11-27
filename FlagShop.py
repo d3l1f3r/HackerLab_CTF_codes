@@ -6,7 +6,7 @@ import threading as t
 def main():
     cust_cookie = {"session": "ВАША_СЕССИЯ_2_АККАУНТА"}
 
-    res = r.post('http://62.173.140.174:16103/buy/ID_ТОВАРА', cookies=cust_cookie)
+    res = r.post('http://[IP]:16103/buy/ID_ТОВАРА', cookies=cust_cookie)
     print(res.text, res.content)
 
 if __name__=="__main__":

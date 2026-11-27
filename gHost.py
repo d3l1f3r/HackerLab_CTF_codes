@@ -3,7 +3,7 @@ import string
 
 def main():
     letters = [c for c in string.printable if c not in "#/?"]
-    url = "http://192.169.2.100:16094/"
+    url = "http://[IP]:16094/"
 
     while True:
         for i in letters:
